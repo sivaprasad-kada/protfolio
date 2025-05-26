@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Blurbob from './Blurbob';
 import About from './components/About';
 import Skills from './components/Skills';
-import Projectexperience from './components/projectexperience';
+import Projectexperience from './components/Projectexperience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
