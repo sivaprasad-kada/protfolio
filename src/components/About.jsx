@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import Tilt from 'react-parallax-tilt';
-import sivaprasad from '../../src/assets/sivaprasad.jpg';
+import sivaprasad from '../../src/assets/sivaprasad.JPG';
 export default function About() {
   return (
     <section id='about' className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans  md:mt-24 lg:mt-32'>
