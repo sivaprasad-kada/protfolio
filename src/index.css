@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+  font-family: "Poppins",sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* tailwind.config.css or inside a <style> tag with @layer base */
+@layer base {
+  .swiper-pagination-bullet {
+    background: #8245ec !important;
+    opacity: 0.5;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
+  .swiper-slide {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .swiper-slide:not(.swiper-slide-active) {
+    filter: blur(2px) brightness(0.9);
+    transform: scale(0.92);
+  }
+}
+
+@theme {
+  --animate-blob: blob 10s infinite;
+  
+  @keyframes blob {
+    0% {
+      transform: scale(1);
+    }
+    33% {
+      transform: scale(1.2);
+    }
+    66% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
