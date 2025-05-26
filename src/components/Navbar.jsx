@@ -84,10 +84,10 @@ export default function Navbar() {
                                     )
                                 }
                                 <div className="md:hidden flex space-x-2 justify-center ">
-                                    <a href="https://www.linkedin.com/in/siva-prasad-kada-10215129a/" rel="noopener noreferrer" target="_blank" className="text-gray-200 hover:text-white]">
+                                    <a href="https://github.com/sivaprasad-kada" rel="noopener noreferrer" target="_blank" className="text-gray-200 hover:text-white]">
                                         <FaGithub size={24} />
                                     </a>
-                                    <a href="https://github.com/sivaprasad-kada" rel="noopener noreferrer" target="_blank" className="text-gray-200 hover:text-white">
+                                    <a href="https://www.linkedin.com/in/siva-prasad-kada-10215129a/" rel="noopener noreferrer" target="_blank" className="text-gray-200 hover:text-white">
                                         <FaLinkedin size={24} />
                                     </a>
                                 </div>
