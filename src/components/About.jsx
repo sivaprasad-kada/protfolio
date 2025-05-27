@@ -1,7 +1,6 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import Tilt from 'react-parallax-tilt';
-import sivaprasad from '../../src/assets/'
 import sivaprasad from '../../src/assets/sivaprasad.JPG';
 export default function About() {
   return (
