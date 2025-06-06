@@ -21,7 +21,7 @@ export default function Skills() {
           '>
             <h3 className='text-xl sm:text-2xl font-semibold text-gray-400 text-center'>{category.title}</h3>
             {/* skill items both images and names */}
-            <Tilt className='' tiltMaxAngleX={7} tiltMaxAngleY={7} perspective={100} scale={0.8} transitionSpeed={1000} gyroscope = {true}>
+            <Tilt className='' tiltMaxAngleX={7} tiltMaxAngleY={7} perspective={100} scale={0.8} transitionSpeed={1000} gyroscope = {false}>
 
             <div className='grid grid-cols-2 sm:grid-cols-3 gap-10 w-full'>
               {category.skills.map((skill)=>(

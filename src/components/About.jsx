@@ -52,7 +52,7 @@ export default function About() {
         </div>
           {/* Right side */}
           <div className='md:w-1/2 flex justify-center '>
-          <Tilt className='w-48 h-48 sm:w-64 sm:h-64 md:w-[30 rem] md:h-[30 rem] border-4 border-purple-700 rounded-full' tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={100} scale={1.05} transitionSpeed={1000} gyroscope = {true}>
+          <Tilt className='w-48 h-48 sm:w-64 sm:h-64 md:w-[30 rem] md:h-[30 rem] border-4 border-purple-700 rounded-full' tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={100} scale={1.05} transitionSpeed={1000} gyroscope = {false}>
           <img src={sivaprasad} alt='sivaprasadKada' className='w-full h-full  rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'></img></Tilt>
           </div>
       </div>
