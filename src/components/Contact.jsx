@@ -30,26 +30,32 @@ export default function Contact() {
     }
   }
   return (
-    <section id='contact' className='flex flex-col py-10 items-center justify-center'>
-    {/* heading */}
-    <div className=" text-center mb-16">
+    <section id='contact' className='flex flex-col py-20 px-[7vw] lg:px-[12vw] items-center justify-center font-sans'>
+      {/* heading */}
+      <div className="text-center mb-12">
         <h3 className="text-gray-400 text-2xl font-semibold">Contact</h3>
         <div className="w-24 bg-[#8245ec] h-1 mx-auto mt-2"></div>
-        <p className="text-gray-400 font-semibold text-2xl mt-2">Let’s Connect and Create Something Great.</p>
+        <p className="text-gray-400 font-medium text-xl mt-4">Let’s Connect and Create Something Great.</p>
       </div>
-      <div className=' md:w-100 bg-[#0d081f] border-gray-500 border-2 px-5 py-5 rounded-lg flex flex-col items-center justify-center'>
-        <h3 className='text-white font-bold text-lg'>Let's Connect 🤝</h3>
-        <form className='flex flex-col space-y-4' onSubmit={handleSubmit}>
-            <input type='email'required name='user_mail' placeholder='Your Email' className='w-full p-1.5 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none  focus:border-purple-500'>
+      
+      <div className='w-full max-w-lg bg-gray-900/80 backdrop-blur-md border border-white/20 p-8 sm:p-10 rounded-2xl shadow-[0_0_20px_rgba(130,69,236,0.15)] flex flex-col items-center justify-center hover:shadow-[0_0_30px_rgba(130,69,236,0.3)] transition-shadow duration-300'>
+        <h3 className='text-white font-bold text-2xl mb-6'>Let's Connect 🤝</h3>
+        <form className='flex flex-col space-y-5 w-full' onSubmit={handleSubmit}>
+            <div className="flex flex-col sm:flex-row gap-5">
+              <input type='text' required name='user_name' placeholder='Your Name' className='w-full p-3 rounded-xl bg-[#131025] text-white border border-gray-700 focus:outline-none focus:border-[#8245ec] focus:ring-1 focus:ring-[#8245ec] transition-colors text-sm sm:text-base'>
+              </input>
+              <input type='text' required name='subject' placeholder='Mobile' className='w-full p-3 rounded-xl bg-[#131025] text-white border border-gray-700 focus:outline-none focus:border-[#8245ec] focus:ring-1 focus:ring-[#8245ec] transition-colors text-sm sm:text-base'>
+              </input>
+            </div>
+            <input type='email' required name='user_mail' placeholder='Your Email' className='w-full p-3 rounded-xl bg-[#131025] text-white border border-gray-700 focus:outline-none focus:border-[#8245ec] focus:ring-1 focus:ring-[#8245ec] transition-colors text-sm sm:text-base'>
             </input>
-             <input type='text'required name='user_name' placeholder='Your Name' className='w-full p-1.5 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none  focus:border-purple-500'>
-            </input>
-             <input type='text'required name='subject' placeholder='Mobile' className='w-full p-1.5 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none  focus:border-purple-500'>
-            </input>
-            <textarea rows={4} name='message' placeholder='message' className='w-full p-1.5 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none  focus:border-purple-500'></textarea>
-            <button type='submit' className='w-full disabled={loading}  bg-gradient-to-r from-purple-600 to-pink-500 py-1.5 text-white font-semibold rounded-md hover:opacity-90 transition'>{loading ? "Sending..." : "Send Message"}</button>
+            <textarea rows={5} name='message' placeholder='Message' className='w-full p-3 rounded-xl bg-[#131025] text-white border border-gray-700 focus:outline-none focus:border-[#8245ec] focus:ring-1 focus:ring-[#8245ec] transition-colors resize-none text-sm sm:text-base'></textarea>
+            
+            <button type='submit' disabled={loading} className='w-full disabled:opacity-70 disabled:cursor-not-allowed bg-gradient-to-r from-[#8245ec] to-[#a855f7] py-3.5 text-white font-bold text-lg rounded-xl hover:shadow-[0_0_20px_rgba(130,69,236,0.5)] active:scale-[0.98] transition-all duration-300 mt-2'>
+              {loading ? "Sending..." : "Send Message"}
+            </button>
         </form>
-         <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
+        <ToastContainer position="top-right" autoClose={3000} hideProgressBar theme="dark" />
       </div>
     </section>
   )

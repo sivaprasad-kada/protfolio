@@ -6,7 +6,7 @@ export const education = [
     studiedClasses: "Nursery to 5th Class",
     description: "My academic journey began at Nalini English Medium U.P. School, where I studied from Nursery to 5th grade. This formative phase of my education laid a solid intellectual foundation. It was here that I developed core academic skills, discipline, curiosity, and a strong command of language and numbers in a nurturing and structured environment.",
     achievements: [],
-    logo:ap
+    logo: null
     
   },
   {
