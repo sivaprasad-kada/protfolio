@@ -2,6 +2,7 @@ import React from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import Tilt from 'react-parallax-tilt';
 import sivaprasad from '../../src/assets/sivaprasad.JPG';
+import resume from '../assets/KadaSivaprasad_Resume.pdf';
 export default function About() {
   return (
     <section id='about' className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans pt-20 md:pt-28 lg:pt-32'>
@@ -32,7 +33,7 @@ export default function About() {
           {/* button */}
           <div className="md:flex md:flex-col md:items-start flex flex-row justify-center mt-8">
             <a
-              href='../../src/cv.html'
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white py-3 px-8 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#8245ec]"
