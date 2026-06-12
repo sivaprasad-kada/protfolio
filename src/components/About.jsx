@@ -35,26 +35,25 @@ export default function About() {
             <a
               href={resume}
               target="_blank"
-              rel="noopener noreferrer"
               className="text-white py-3 px-8 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_#8245ec]"
               style={{
                 background: 'linear-gradient(90deg,#8245ec,#a855f7)',
                 boxShadow: '0 0 10px #8245ec',
               }}
             >
-              Download CV
+              CV
             </a>
           </div>
 
         </div>
-          {/* Right side */}
-          <div className='md:w-1/2 flex justify-center items-center w-full'>
+        {/* Right side */}
+        <div className='md:w-1/2 flex justify-center items-center w-full'>
           <Tilt className='w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 border-purple-700/50 rounded-full flex items-center justify-center p-2' tiltMaxAngleX={15} tiltMaxAngleY={15} perspective={1000} scale={1.05} transitionSpeed={1000} gyroscope={false}>
             <div className='w-full h-full rounded-full overflow-hidden shadow-[0_0_30px_rgba(130,69,236,0.6)]'>
               <img src={sivaprasad} alt='sivaprasadKada' className='w-full h-full object-cover rounded-full'></img>
             </div>
           </Tilt>
-          </div>
+        </div>
       </div>
     </section>
   )
